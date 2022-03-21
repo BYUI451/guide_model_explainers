@@ -1,17 +1,10 @@
 # Model Explainers
 
-## Goals
-
-- Leave the participants with working examples.
-- Have documented instructions and references for further learning.
-- Cite experts based on your research.
-- Make sure your entire team contributes.
-
 ## Sample Code
 
 Check out model_explainers.ipynb for the example code so you can follow along.
 
-Alternatively, you can head to this [Model Explainers file in Databricks](https://adb-5187062830023627.7.azuredatabricks.net/?o=5187062830023627#notebook/4497061773294494/command/4497061773294495). *Make sure you make a copy* before you start editing this file so you can leave with your own code. If this link doesn't work for you, head to Databricks > Workspace > Team Presentations > Model Explainers.
+Alternatively, you can head to this [Model Explainers file in Databricks](https://adb-5187062830023627.7.azuredatabricks.net/?o=5187062830023627#notebook/3449113359366449/command/3449113359366450). *Make sure you make a copy* before you start editing this file so you can leave with your own code. If this link doesn't work for you, head to Databricks > Workspace > Team Presentations > Model Explainers.
 
 ## Model Explainers
 
@@ -24,17 +17,6 @@ As we've been going in class, we've been generating hundreds of features. But tr
 
 Another advantage to model explainers is understanding individual instances that our model predicts. In statistics, we can understand things "on the average". That is to say, if someone was to apply for a loan, we can say "because most people that are approved for a loan have a credit score of 750, and your credit score is 700, you're unlikely to be approved for a loan". However, if we had a model explainer for a machine learning model that decides if you are approved for a loan, we could look at each factor that changes the final outcome, and how much it changes it by. We'll show an example of this more in later sections
 
-### What do we do with the information a model explainer gives us?
-
-Once we have a model what information can we use it for. One of the most important parts of a model explainer is how 
-we are able to see how individual features effect the outcome of the model. In the example of the being approved for a loan we 
-could see if a feature like 'years of credit history' could negativly affect if someone is going to be approved for a loan. 
-      
-In the example of our model we can look at the shap values for the amount of buisnesses in a track and see how when we have more 
-buisnesses in a track it has a strong positive atribute to the number of restrants we have in a track. Using model explainers like 
-SHAP allows us to see if we have some information leakage from our target varialbe.
-
-![](pictures/shap_dependence_plot.png)
 ### SHAP  
 
 For more information about the math behind SHAP, [check out this website](https://christophm.github.io/interpretable-ml-book/shap.html).  
@@ -76,6 +58,18 @@ classification: F1, accuracy, recall, precision and AUC regression: mean squared
 ![](pictures/dalex_4.png)
 
 ![](pictures/importance.png)
+
+### What do we do with the information a model explainer gives us?
+
+Once we have a model what information can we use it for. One of the most important parts of a model explainer is how 
+we are able to see how individual features effect the outcome of the model. In the example of the being approved for a loan we 
+could see if a feature like 'years of credit history' could negativly affect if someone is going to be approved for a loan. 
+      
+In the example of our model we can look at the shap values for the amount of buisnesses in a track and see how when we have more 
+buisnesses in a track it has a strong positive atribute to the number of restrants we have in a track. Using model explainers like 
+SHAP allows us to see if we have some information leakage from our target varialbe.
+
+![](pictures/shap_dependence_plot.png)
 
 ### Saving and loading Explainers
 

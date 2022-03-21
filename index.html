@@ -77,22 +77,6 @@ is 700, you're unlikely to be approved for a loan". However, if we had a model e
 model that decides if you are approved for a loan, we could look at each factor that changes the final outcome, 
 and how much it changes it by. We'll show an example of this more in later sections
 
-
-
----
-
-class: center, middle
-
-# What do we do with the info a model explainer gives us? 
-
-Once we have a model what information can we use it for. One of the most important parts of a model explainer is how 
-we are able to see how individual features effect the outcome of the model. In the example of the being approved for a loan we 
-could see if a feature like 'years of credit history' could negativly affect if someone is going to be approved for a loan. 
-      
-In the example of our model we can look at the shap values for the amount of buisnesses in a track and see how when we have more 
-buisnesses in a track it has a strong positive atribute to the number of restrants we have in a track. Using model explainers like 
-SHAP allows us to see if we have some information leakage from our target varialbe.
-
 ---
 
 # SHAP
@@ -119,12 +103,23 @@ You can use Dalex to do some similar things as SHAP, but you can create more ins
       
 We'll discuss this more as we present some sample code.
 
+---
+
+# What do we do with the info a model explainer gives us? 
+
+Once we have a model what information can we use it for. One of the most important parts of a model explainer is how 
+we are able to see how individual features effect the outcome of the model. In the example of the being approved for a loan we 
+could see if a feature like 'years of credit history' could negativly affect if someone is going to be approved for a loan. 
+      
+In the example of our model we can look at the shap values for the amount of buisnesses in a track and see how when we have more 
+buisnesses in a track it has a strong positive atribute to the number of restrants we have in a track. Using model explainers like 
+SHAP allows us to see if we have some information leakage from our target varialbe.
       
 ---
 
 # Let's look at the example code in Databricks
 
-The link can be [here](https://adb-5187062830023627.7.azuredatabricks.net/?o=5187062830023627#notebook/4497061773294494/command/4497061773294495).  
+The link can be [here](https://adb-5187062830023627.7.azuredatabricks.net/?o=5187062830023627#notebook/3449113359366449/command/3449113359366450).  
 Alternatively, you can find the link to the code in our GitHub template or in Databrick>Worspace>Shared>Team Presentations>Model Explainers
 
 ---
