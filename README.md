@@ -82,3 +82,9 @@ There are more graphs to explore. If you are interested in learning more about D
 ### Other Model Explainers
 
 There are more than just these two, but SHAP is one of the most widely used in the community and has the most support. DALEX also appears to be somewhat popular. LIME (Local Interpretable Model-Agnostic Explanations) and Microsoft’s InterpretML are two other model explainers that you could use. If you're interested in learning more, you ask your nearest search engine.
+
+### Further Reading
+
+Here are some great resources to learn more:  
+SHAP:  [https://shap.readthedocs.io/en/latest/index.html](https://shap.readthedocs.io/en/latest/index.html), [https://minimatech.org/explain-python-machine-learning-models-with-shap-library/](https://minimatech.org/explain-python-machine-learning-models-with-shap-library/)
+DALEX:  [https://dalex.drwhy.ai/python/](https://dalex.drwhy.ai/python/)
