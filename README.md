@@ -26,6 +26,15 @@ Another advantage to model explainers is understanding individual instances that
 
 ### What do we do with the information a model explainer gives us?
 
+Once we have a model what information can we use it for. One of the most important parts of a model explainer is how 
+we are able to see how individual features effect the outcome of the model. In the example of the being approved for a loan we 
+could see if a feature like 'years of credit history' could negativly affect if someone is going to be approved for a loan. 
+      
+In the example of our model we can look at the shap values for the amount of buisnesses in a track and see how when we have more 
+buisnesses in a track it has a strong positive atribute to the number of restrants we have in a track. Using model explainers like 
+SHAP allows us to see if we have some information leakage from our target varialbe.
+
+![](pictures/shap_dependence_plot.png)
 ### SHAP  
 
 For more information about the math behind SHAP, [check out this website](https://christophm.github.io/interpretable-ml-book/shap.html).  
