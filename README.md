@@ -2,7 +2,7 @@
 
 ## Sample Code
 
-Check out model_explainers.ipynb for the example code so you can follow along.
+Check out 'Model Explainers.ipynb' or 'Model Explainers.html' for the example code so you can follow along.
 
 Alternatively, you can head to this [Model Explainers file in Databricks](https://adb-5187062830023627.7.azuredatabricks.net/?o=5187062830023627#notebook/3449113359366449/command/3449113359366450). *Make sure you make a copy* before you start editing this file so you can leave with your own code. If this link doesn't work for you, head to Databricks > Workspace > Team Presentations > Model Explainers.
 
