@@ -62,7 +62,7 @@ classification: F1, accuracy, recall, precision and AUC regression: mean squared
 
 ![](pictures/dalex_3.png)
 
-![](pictures/positive rate.png)
+![](pictures/dalex_5.png)
 
 ![](pictures/dalex_4.png)
 
@@ -72,22 +72,7 @@ classification: F1, accuracy, recall, precision and AUC regression: mean squared
 
 You can easily save an Explainer to the pickle (or generaly binary form) and load it again. Any local or lambda function in the Explainer object will be dropped during saving. Residual function by default is local, thus, if default, it is always dropped. Default functions can be retrieved during loading.
 
-# this converts explainer to a binary form
-# exp.dumps()
-
-# this load explainer again
-# dx.Explainer.loads(pickled)
-
-# this will not retrieve default function if dropped
-# dx.Explainer.loads(pickled, use_defaults=False)
-
-# this will save your explainer to the file
-# with open('explainer.pkl', 'wb') as fd:
-#     exp.dump(fd)
-
-# this will load your explainer from the file
-# with open('explainer.pkl', 'rb') as fd:
-#     dx.Explainer.load(fd)
+![](pictures/dalex_6.png)
 
 There are more graphs to explore. If you are interested in learning more about Dalex [check out this website](https://dalex.drwhy.ai/python/api/). Besides that, there is a YouTube video that will teach you how to use Dalex to create some insightful graphs. [Click on this!](https://www.youtube.com/watch?v=sezHr78xxoM)
 
